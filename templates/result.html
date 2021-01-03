@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit card Apporval prediction</title>
+  <link rel="icon" type="image/icon" href="{{ url_for('static',filename='img/icon.png') }}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body class="bg-light">
+   <nav class="navbar navbar-expand-sm navbar-dark bar fixed-top">
+    <b><a class="navbar-brand" style="color:  #efefef  !important;">Credit card Apporval prediction</a></b>
+    <button type="button" class="navbar-toggler" data-toggle = "collapse" data-target= "#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id = "navMenu">
+      <ul class=" nav navbar-nav navbar-right ml-auto">
+
+        <li class="nav-item"><a class="nav-link disabled">{{session.user_id}}</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about" >About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/logout" >Log Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+  <div class="container">
+    <div class="banner-text">
+      <div class="text-area">
+        <p><b><h1>{{prediction_text}}</h1></b></p>
+        <p><b><h1> {{msg}}</h1></b></p>
+        
+      </div>
+      <div class="banner-btn">
+        <a href="/predict" class="active">Predict more </a>
+      </div>
+    </div>
+  </div>
+</header>
+<footer class="page-footer bar">
+  
+ <div class="">
+  <div class="container">
+    <div class="row py-4 d-flex align-items-center">
+       
+            <div class="col-md-12 text-center">
+            
+
+            <a href="https://www.facebook.com/profile.php?id=100002867960669"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/royaljaspreet/"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://twitter.com/Jaspreet212"><i class="fab fa-twitter fa-3x"></i></a>
+            <a href="https://github.com/royaljaspreet"><i class="fab fa-git-square fa-3x"></i></a>
+            
+
+            
+            </div>
+    </div>      
+  </div>
+ </div>
+
+<div class="container text-center text-md-left mt-5">
+    
+    <div class="row">
+       
+        
+         <div class="col-md-3 mx-auto mb-4">
+         <h6 class="text-light text-uppercase font-weight-bold">About</h6>
+          <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
+          <p class="mt-2 text-light">Jaspreet Singh</p>
+          <p class="mt-2 text-light">Gurmantan Singh</p>
+        </div>
+    
+        <div class="col-md-2 mx-auto mb-4">
+        <h6 class=" text-light text-uppercase font-weight-bold">CONTENTS</h6>
+           <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
+ 
+
+
+        <ul class="list-unstyled ">
+        <li class="my-2"><a href="/predict" class="text-light ">PREDICT</a></li>
+        
+        <li class="my-2 "><a href="#" class="text-light">ABOUT</a></li>
+        <li class="my-2 "><a href="/team" class="text-light ">TEAM</a></li>
+        </ul> 
+         </div>
+     
+         <div class="col-md-2 mx-auto mb-4">
+         <h6 class=" text-light text-uppercase font-weight-bold">CONTACT</h6>
+            <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
+         
+         <ul class="list-unstyled">
+             <li class="my-2 "><span class="fas fa-home "></span>
+              <span class="text-light">GNDEC,Ludhiana </span></li>
+           <li class="my-2 "><span class="fas fa-phone-square-alt"></span>
+            <span class="text-light">+091-0002255</span></li>
+           <li class="my-2 "><span class="fa fa-envelope "></span>
+            <span class="text-light ls " >royaljaspreet1@gmail.com</span></li>
+            
+           </ul>
+           
+            
+         </div>
+                
+  
+
+
+
+    </div>
+</div>
+
+
+
+
+
+</footer>
+</body>
+
+
+
+</html>
+<style type="text/css">
+  
+header
+{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("{{ url_for('static', filename='img/js.jpg') }}");
+}
+
+
+
+</style>
