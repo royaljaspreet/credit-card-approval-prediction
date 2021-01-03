@@ -5,7 +5,7 @@
 
   }
   .banner-text{
-    color: #fff;
+    color: #efefef;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -18,20 +18,20 @@
     background-color: black;
   }
   .banner-btn {
-    border:  1px solid #fff;
+    border:  1px solid #efefef;
     border-radius: 50px;
-    border-color: yellow;
+    border-color: #efefef;
     text-decoration: none;
     padding: 10px 50px;
     display: inline-block;
     margin-top: 15px;
-    color: #fff;
+    color: #efefef;
   }
   a:hover{
-    color: yellow;
+    color: white;
   }
   i:hover{
-    color: yellow;
+    color: white;
 
   }
   .cd{

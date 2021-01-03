@@ -10,7 +10,7 @@ header{
     background-color: black;
   }
   .banner-text{
-    color: #fff;
+    color: #efefef;
     position:absolute;
     top: 50%;
     left: 50%;
@@ -20,14 +20,14 @@ header{
 
   }
    .banner-btn a{
-    border:  1px solid #fff;
+    border:  1px solid #efefef;
     border-radius: 50px;
     text-decoration: none;
-    border-color: yellow;
+    border-color: #efefef;
     padding: 10px 50px;
     display: inline-block;
     margin-top: 15px;
-    color: #fff;
+    color: #efefef;
     
   }
   .button {
@@ -42,10 +42,10 @@ header{
     color:white;
   }
   a:hover{
-    color: yellow;
+    color: white;
   }
   i:hover{
-    color: yellow;}
+    color: white;}
   @media(min-width:700px){
   header{
     height:93.6vh;}
