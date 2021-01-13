@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Credit card Apporval prediction</title>
+  <title>Credit Card Apporval Prediction</title>
   <link rel="icon" type="image/icon" href="{{ url_for('static',filename='img/icon.png') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/style-predict.css') }}">
@@ -14,16 +14,14 @@
 </head>
 <body class="bg-light">
    <nav class="navbar navbar-expand-sm navbar-dark bar fixed-top">
-    <b><a class="navbar-brand" style="color: #efefef !important;">Credit card Apporval prediction</a></b>
-    <div class="mx-auto order-0">
-    <b><a class="navbar-brand mx-auto" style="color:  #efefef  !important;">          G&J Group Of Banks       </a></b>
+    <b><a class="navbar-brand" style="color: #efefef !important;">Credit Card Apporval Prediction</a></b>
     <button type="button" class="navbar-toggler" data-toggle = "collapse" data-target= "#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button></div>
     <div class="collapse navbar-collapse" id = "navMenu">
       <ul class=" nav navbar-nav navbar-right ml-auto">
       	<li class="nav-item"><a class="nav-link disabled">{{session.user_id}}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="/loggedin" >Back</a></li>
         <li class="nav-item"><a class="nav-link" href="/logout" >Log Out</a></li>
         
@@ -36,10 +34,10 @@
 		<div class="row mt-5 pt-5"></div>
 		<div class="row mt-4 d-flex justify-content-center">
 			<div class="col-sm-5 pl-5 pr-5">
-				<label>Age :</label><br><input type="text" class="form-control" name="Age" required="required"><div><h6 style="color: red">{{msg}}</h6></div><br>
+				<label>Age :</label><br><input type="text" class="form-control" name="Age" placeholder="Enter Your Age "required="required"><div><h6 style="color: red">{{msg}}</h6></div><br>
 			</div>
 			<div class="col-sm-5 pl-5 pr-5">
-				<label>Debt :</label><br><input type="text" class="form-control" name="Debt" placeholder="in Lakhs" required="required">
+				<label>Debt :</label><br><input type="text" class="form-control" name="Debt" placeholder="Enter Debt " required="required">
 			</div></div>
       
 		<div class="row mt-2 d-flex justify-content-center">
@@ -50,7 +48,7 @@
         <label>YearsEmployed :</label><br><input type="text" class="form-control" name="YearsEmployed"  placeholder="Work Experience in Years"required="required"><br>
       </div>
       <div class="col-sm-5 pl-5 pr-5">
-        <label>Income :</label><br><input type="text" class="form-control" name="Income"  placeholder="Enter Your Income"required="required"><br>
+        <label>Income :</label><br><input type="text" class="form-control" name="Income"  placeholder="Enter Your Monthly Income"required="required"><br>
       </div>
       <div class="col-sm-2 pl-5 pr-5">
         <label>Gender :</label><br> 
@@ -121,7 +119,7 @@
             <div class="col-md-12 text-center ml-auto">
             
 
-            <a href="https://www.facebook.com/profile.php?id=100002867960669"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.facebook.com/gurmantan.singh"><i class="fab fa-facebook fa-3x"></i></a>
             <a href="https://www.instagram.com/royaljaspreet/"><i class="fab fa-instagram fa-3x ml-2"></i></a>
             <a href="https://twitter.com/Jaspreet212"><i class="fab fa-twitter fa-3x ml-2"></i></a>
             <a href="https://github.com/royaljaspreet"><i class="fab fa-git-square fa-3x ml-2"></i></a>
@@ -141,8 +139,7 @@
          <div class="col-md-3 mx-auto mb-4">
          <h6 class="text-light text-uppercase font-weight-bold">About</h6>
           <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
-          <p class="mt-2 text-light">Jaspreet Singh</p>
-          <p class="mt-2 text-light">Gurmantan Singh</p>
+          <p class="mt-2 text-light">This model predict whether credit card will be approved or not. <a href="/about">read more..</p>
         </div>
     
         <div class="col-md-2 mx-auto mb-4">
@@ -154,7 +151,7 @@
         <ul class="list-unstyled ">
         <li class="my-2"><a href="/predict" class="text-light ">PREDICT</a></li>
         
-        <li class="my-2 "><a href="#" class="text-light">ABOUT</a></li>
+        <li class="my-2 "><a href="/about" class="text-light">ABOUT</a></li>
         <li class="my-2 "><a href="/team" class="text-light ">TEAM</a></li>
         </ul> 
          </div>
@@ -164,12 +161,12 @@
             <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
          
          <ul class="list-unstyled">
-             <li class="my-2 "><span class="fas fa-home "></span>
-              <span class="text-light"> GNDEC,Ludhiana </span></li>
-           <li class="my-2 "><span class="fas fa-phone-square-alt"></span>
-            <span class="text-light"> +091-0002255</span></li>
-           <li class="my-2 "><span class="fa fa-envelope "></span>
-            <span class="text-light ls " >  royaljaspreet1@gmail.com</span></li>
+             <li class="my-2 "><span class="fas fa-home mr-2"></span>
+              <span class="text-light">GNDEC,Ludhiana </span></li>
+           <li class="my-2 "><span class="fas fa-phone-square-alt mr-2"></span>
+            <span class="text-light">+91-82903-22550</span></li>
+           <li class="my-2 "><span class="fa fa-envelope mr-2"></span>
+            <span class="text-light ls " >royaljaspreet1@gmail.com</span></li>
             
            </ul>
            

@@ -158,14 +158,14 @@ def validatepredict():
                 features  = [Gender,Age,Debt,Married,Bankcustomer,EducationLevel,YearsEmployed,PriorDefault,Employed,Citizen,Income]   
                 final_features = [np.array(features)]
                 print(final_features)
-                model=pickle.load(open('Linear-regressionModel.pkl','rb'))
+                model=pickle.load(open('LogisticRegression.pkl','rb'))
                 prediction=model.predict(final_features)
                 '''output=round(prediction[0],2)'''
                 output = prediction
                 if output == 0:
-                    return render_template('result.html',prediction_text="Approved")
+                    return render_template('result.html',prediction_text="Congratulations ! Your Credit Card Application is Approved")
                 else:
-                    return render_template('result.html',prediction_text="not Approved")
+                    return render_template('result.html',prediction_text="We regret to inform you that we cannot approve your application at this time")
 
     else:
         return redirect(url_for('index'))

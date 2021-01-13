@@ -4,7 +4,7 @@
   <title>Credit Card Apporval Prediction</title>
   <link rel="icon" type="image/icon" href="{{ url_for('static',filename='img/icon.png') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/style-about.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -14,30 +14,27 @@
 </head>
 <body class="bg-light">
    <nav class="navbar navbar-expand-sm navbar-dark bar fixed-top">
-    <b><a class="navbar-brand" style="color:  #efefef  !important;">Credit Card Apporval Prediction</a></b>
+    <b><a class="navbar-brand" style="color: #efefef !important;">Credit Card Apporval Prediction</a></b>
     <button type="button" class="navbar-toggler" data-toggle = "collapse" data-target= "#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id = "navMenu">
       <ul class=" nav navbar-nav navbar-right ml-auto">
-
-        <li class="nav-item"><a class="nav-link disabled">{{session.user_id}}</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about" >About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/logout" >Log Out</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="#" style="color: white;">{{session.user}}</a></li>
+        <li class="nav-item"><a class="nav-link" href="/loggedin" style="color: white;">Back</a></li>
+        
       </ul>
     </div>
   </nav>
   <header>
   <div class="container">
     <div class="banner-text">
-      <div class="text-area">
-        <p><b><h1>{{prediction_text}}</h1></b></p>
-        <p><b><h1> {{msg}}</h1></b></p>
+      <div class="text-area ">
         
+        
+        This <b style="color: #efefef;">Credit Card Apporval Prediction</b> model predict whether credit card will be approved or not. The prediction is done on the basis of various criteria like Age , Gender , Income and Employment Status etc.The dataset is taken from <a href="http://archive.ics.uci.edu/ml/datasets/credit+approval">Uci</a>. By using Machine Learning, the dataset is trained and test in 8:2 ratio. We use Logistic Regression Model to predict . This model gives about 79 % of accuracy ,which is good enough.
       </div>
-      <div class="banner-btn">
-        <a href="/predict" class="active">Predict more </a>
-      </div>
+      
     </div>
   </div>
 </header>
@@ -47,7 +44,7 @@
   <div class="container">
     <div class="row py-4 d-flex align-items-center">
        
-            <div class="col-md-12 text-center ml-auto">
+            <div class="col-md-12 text-center">
             
 
             <a href="https://www.facebook.com/gurmantan.singh"><i class="fab fa-facebook fa-3x"></i></a>
@@ -67,11 +64,7 @@
     <div class="row">
        
         
-         <div class="col-md-3 mx-auto mb-4">
-         <h6 class="text-light text-uppercase font-weight-bold">About</h6>
-          <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
-          <p class="mt-2 text-light">This model predict whether credit card will be approved or not. <a href="/about">read more..</p>
-        </div>
+         
     
         <div class="col-md-2 mx-auto mb-4">
         <h6 class=" text-light text-uppercase font-weight-bold">CONTENTS</h6>
@@ -80,10 +73,10 @@
 
 
         <ul class="list-unstyled ">
-        <li class="my-2"><a href="/predict" class="text-light ">PREDICT</a></li>
+        <li class="my-2 "><a href="/predict" class="text-light">PREDICT</a></li>
         
-        <li class="my-2 "><a href="/about" class="text-light">ABOUT</a></li>
-        <li class="my-2 "><a href="/team" class="text-light ">TEAM</a></li>
+        
+        <li class="my-2 "><a href="/team" class="text-light">TEAM</a></li>
         </ul> 
          </div>
      
@@ -103,31 +96,15 @@
            
             
          </div>
-                
-  
-
-
-
     </div>
 </div>
-
-
-
-
-
 </footer>
 </body>
-
-
-
-</html>
 <style type="text/css">
-  
 header
 {
-  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url("{{ url_for('static', filename='img/gs.jpg') }}");
-}
-
-
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url("{{ url_for('static', filename='img/cc2.jpg') }}");
+  }
 
 </style>
+</html>

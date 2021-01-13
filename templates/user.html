@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title style="color:  #efefef ">Credit card Apporval prediction</title>
+  <title style="color:  #efefef ">Credit Card Apporval Prediction</title>
   <link rel="icon" type="image/icon" href="{{ url_for('static',filename='img/icon.png') }}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
@@ -14,14 +14,14 @@
 </head>
 <body class="bg-light">
    <nav class="navbar navbar-expand-sm navbar-dark bar fixed-top">
-    <b><a class="navbar-brand" style="color:  #efefef  !important;">Credit card Apporval prediction</a></b>
+    <b><a class="navbar-brand" style="color:  #efefef  !important;">Credit Card Apporval Prediction</a></b>
     <button type="button" class="navbar-toggler" data-toggle = "collapse" data-target= "#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id = "navMenu">
       <ul class=" nav navbar-nav navbar-right ml-auto">
         <li class="nav-item"><a class="nav-link disabled" href="#">{{session.user_id}}</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/About">About</a></li>
         <li class="nav-item"><a class="nav-link" href="/logout" >Log Out</a></li>
       </ul>
     </div>
@@ -30,9 +30,9 @@
   <div class="container">
     <div class="banner-text">
       <div class="text-area">
-        <p>Check Whether Your </p>
+        <p><h3>Check Whether Your</h3> </p>
         <p><b><h1> Credit Card </h1></b></p>
-        <p>Application Will Be Approved Or Not</p>
+        <p><h3>Application Will Be Approved Or Not</h3></p>
       </div>
       <div class="banner-btn">
         <a href="/predict" class="active">Predict </a>
@@ -49,7 +49,7 @@
             <div class="col-md-12 text-center ml-auto">
             
 
-            <a href="https://www.facebook.com/profile.php?id=100002867960669"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.facebook.com/gurmantan.singh"><i class="fab fa-facebook fa-3x"></i></a>
             <a href="https://www.instagram.com/royaljaspreet/"><i class="fab fa-instagram fa-3x ml-2"></i></a>
             <a href="https://twitter.com/Jaspreet212"><i class="fab fa-twitter fa-3x ml-2"></i></a>
             <a href="https://github.com/royaljaspreet"><i class="fab fa-git-square fa-3x ml-2"></i></a>
@@ -69,8 +69,7 @@
          <div class="col-md-3 mx-auto mb-4">
          <h6 class="text-light text-uppercase font-weight-bold">About</h6>
           <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
-          <p class="mt-2 text-light">Jaspreet Singh</p>
-          <p class="mt-2 text-light">Gurmantan Singh</p>
+          <p class="mt-2 text-light">This model predict whether credit card will be approved or not. <a href="/about">read more..</p>
         </div>
     
         <div class="col-md-2 mx-auto mb-4">
@@ -82,7 +81,7 @@
         <ul class="list-unstyled ">
         <li class="my-2"><a href="/predict" class="text-light ">PREDICT</a></li>
         
-        <li class="my-2 "><a href="#" class="text-light">ABOUT</a></li>
+        <li class="my-2 "><a href="/About" class="text-light">ABOUT</a></li>
         <li class="my-2 "><a href="/team" class="text-light ">TEAM</a></li>
         </ul> 
          </div>
@@ -92,11 +91,11 @@
             <hr class=" bg-warning mb-4 d-inline-block mx-auto" style="width: 85px ;height: 2px" >
          
          <ul class="list-unstyled">
-             <li class="my-2 "><span class="fas fa-home "></span>
+             <li class="my-2 "><span class="fas fa-home mr-2"></span>
               <span class="text-light">GNDEC,Ludhiana </span></li>
-           <li class="my-2 "><span class="fas fa-phone-square-alt"></span>
-            <span class="text-light">+091-0002255</span></li>
-           <li class="my-2 "><span class="fa fa-envelope "></span>
+           <li class="my-2 "><span class="fas fa-phone-square-alt mr-2"></span>
+            <span class="text-light">+91-82903-22550</span></li>
+           <li class="my-2 "><span class="fa fa-envelope mr-2"></span>
             <span class="text-light ls " >royaljaspreet1@gmail.com</span></li>
             
            </ul>
@@ -125,7 +124,7 @@
   
 header
 {
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url("{{ url_for('static', filename='img/js.jpg') }}");
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url("{{ url_for('static', filename='img/js.jpg') }}");
 }
 
 
